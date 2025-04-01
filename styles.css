@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Slightly darker gradient from a darker pink to a darker lavender */
+    background: linear-gradient(135deg, #f7d9e6 0%, #e9d5f7 100%);
+    background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Hero Section (Section 1) */
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #2a2a2a; /* Slightly darker text for better contrast */
+}
+
+.tagline {
+    background-color: #f5a623; /* Orange background for tagline */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #2a2a2a; /* Slightly darker text for better contrast */
+    font-size: 1.1em;
+}
+
+.contact-item i {
+    font-size: 1.3em;
+}
+
+.contact-item:hover {
+    color: #f5a623;
+}
+
+/* Details Section (Section 2) */
+#details .container {
+    text-align: left;
+}
+
+/* Side-by-Side Layout for Education/Experience and Skills/Leadership */
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.category-left,
+.category-right {
+    flex: 1;
+    min-width: 0; /* Prevents overflow */
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 2em;
+    color: #ff4040; /* Red color for section titles */
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the titles */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.item-details h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #2a2a2a; /* Slightly darker text for better contrast */
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #5a5a5a; /* Slightly darker secondary text for better contrast */
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-logo {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    object-fit: contain; /* Ensures logos maintain aspect ratio */
+}
+
+.skill-item p {
+    margin: 0;
+    color: #2a2a2a; /* Slightly darker text for better contrast */
+    font-size: 0.9em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .side-by-side {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .category-left,
+    .category-right {
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .skill-logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain; /* Ensures logos maintain aspect ratio on mobile */
+    }
+
+    .item-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .section {
+        padding: 20px 10px; /* Reduced padding on mobile for better spacing */
+    }
+
+    .category-title {
+        font-size: 1.5em; /* Slightly smaller title on mobile */
+    }
+
+    .item {
+        margin-bottom: 15px; /* Reduced margin on mobile */
+    }
+}
