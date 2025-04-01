@@ -2,9 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    /* Slightly darker gradient from a darker pink to a darker lavender */
     background: linear-gradient(135deg, #f7d9e6 0%, #e9d5f7 100%);
-    background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
+    background-attachment: fixed;
 }
 
 main {
@@ -27,7 +26,6 @@ main {
     width: 100%;
 }
 
-/* Hero Section (Section 1) */
 #hero .container {
     display: flex;
     flex-direction: column;
@@ -44,11 +42,11 @@ main {
 .name {
     font-size: 2.5em;
     margin: 10px 0;
-    color: #2a2a2a; /* Slightly darker text for better contrast */
+    color: #2a2a2a;
 }
 
 .tagline {
-    background-color: #f5a623; /* Orange background for tagline */
+    background-color: #f5a623;
     color: #fff;
     padding: 10px 20px;
     border-radius: 20px;
@@ -69,7 +67,7 @@ main {
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    color: #2a2a2a; /* Slightly darker text for better contrast */
+    color: #2a2a2a;
     font-size: 1.1em;
 }
 
@@ -81,12 +79,10 @@ main {
     color: #f5a623;
 }
 
-/* Details Section (Section 2) */
 #details .container {
     text-align: left;
 }
 
-/* Side-by-Side Layout for Education/Experience and Skills/Leadership */
 .side-by-side {
     display: flex;
     justify-content: space-between;
@@ -97,7 +93,7 @@ main {
 .category-left,
 .category-right {
     flex: 1;
-    min-width: 0; /* Prevents overflow */
+    min-width: 0;
 }
 
 .category {
@@ -106,10 +102,10 @@ main {
 
 .category-title {
     font-size: 2em;
-    color: #ff4040; /* Red color for section titles */
+    color: #ff4040;
     text-transform: lowercase;
     margin-bottom: 20px;
-    text-align: center; /* Center-align the titles */
+    text-align: center;
 }
 
 .item {
@@ -128,15 +124,14 @@ main {
 .item-details h3 {
     font-size: 1.2em;
     margin: 0;
-    color: #2a2a2a; /* Slightly darker text for better contrast */
+    color: #2a2a2a;
 }
 
 .item-details p {
     margin: 5px 0;
-    color: #5a5a5a; /* Slightly darker secondary text for better contrast */
+    color: #5a5a5a;
 }
 
-/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -152,16 +147,62 @@ main {
     width: 30px;
     height: 30px;
     margin-bottom: 8px;
-    object-fit: contain; /* Ensures logos maintain aspect ratio */
+    object-fit: contain;
 }
 
 .skill-item p {
     margin: 0;
-    color: #2a2a2a; /* Slightly darker text for better contrast */
+    color: #2a2a2a;
     font-size: 0.9em;
 }
 
-/* Responsive Adjustments */
+#projects-certs {
+    /* No background color specified, so it inherits from the body */
+}
+
+.projects-grid,
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item,
+.cert-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-img,
+.cert-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.project-item h3,
+.cert-item p {
+    margin: 5px 0;
+}
+
+.live-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.live-link-button:hover {
+    background-color: #e0941f;
+}
+
 @media (max-width: 768px) {
     .side-by-side {
         flex-direction: column;
@@ -180,7 +221,7 @@ main {
     .skill-logo {
         width: 40px;
         height: 40px;
-        object-fit: contain; /* Ensures logos maintain aspect ratio on mobile */
+        object-fit: contain;
     }
 
     .item-logo {
@@ -189,14 +230,14 @@ main {
     }
 
     .section {
-        padding: 20px 10px; /* Reduced padding on mobile for better spacing */
+        padding: 20px 10px;
     }
 
     .category-title {
-        font-size: 1.5em; /* Slightly smaller title on mobile */
+        font-size: 1.5em;
     }
 
     .item {
-        margin-bottom: 15px; /* Reduced margin on mobile */
+        margin-bottom: 15px;
     }
 }
