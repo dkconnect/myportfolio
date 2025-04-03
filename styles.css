@@ -83,6 +83,31 @@ main {
     text-align: left;
 }
 
+/* About Me Section Styling */
+.category {
+    margin-bottom: 40px;
+}
+
+.category p {
+    font-size: 1.1em;
+    color: #5a5a5a;
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: left;
+    max-width: 800px; /* Limits width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-title {
+    font-size: 2em;
+    color: #ff4040;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Side-by-side layout */
 .side-by-side {
     display: flex;
     justify-content: space-between;
@@ -94,18 +119,6 @@ main {
 .category-right {
     flex: 1;
     min-width: 0;
-}
-
-.category {
-    margin-bottom: 40px;
-}
-
-.category-title {
-    font-size: 2em;
-    color: #ff4040;
-    text-transform: lowercase;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .item {
@@ -308,5 +321,11 @@ footer p {
 
     .certs-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Adjust About Me text for smaller screens */
+    .category p {
+        font-size: 1em;
+        text-align: center; /* Center text on mobile for better readability */
     }
 }
