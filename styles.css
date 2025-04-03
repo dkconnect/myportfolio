@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff; /* Changed from gradient to solid white */
+    background: #ffffff;
     background-attachment: fixed;
 }
 
@@ -86,7 +86,7 @@ main {
 .side-by-side {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px; /* Increased gap for more spacing between left and right sections */
     margin-bottom: 40px;
 }
 
@@ -211,7 +211,7 @@ main {
     object-fit: contain;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
-    border-radius: 10px; /* Added for curved edges */
+    border-radius: 10px;
 }
 
 .cert-img:hover {
@@ -303,7 +303,7 @@ footer p {
     .cert-img {
         width: 200px;
         height: auto;
-        border-radius: 10px; /* Maintain curved edges on mobile */
+        border-radius: 10px;
     }
 
     .certs-grid {
