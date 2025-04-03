@@ -112,12 +112,12 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item-logo {
@@ -154,11 +154,11 @@ main {
     height: 30px;
     margin-bottom: 8px;
     object-fit: contain;
-    transition: transform 0.3s ease; /* Smooth transition for hover */
+    transition: transform 0.3s ease;
 }
 
 .skill-logo:hover {
-    transform: scale(1.2); /* Scales up skill icons on hover */
+    transform: scale(1.2);
 }
 
 .skill-item p {
@@ -202,19 +202,20 @@ main {
 }
 
 .project-img:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .cert-img {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: auto;
     object-fit: contain;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    border-radius: 10px; /* Added for curved edges */
 }
 
 .cert-img:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .image-link {
@@ -302,6 +303,7 @@ footer p {
     .cert-img {
         width: 200px;
         height: auto;
+        border-radius: 10px; /* Maintain curved edges on mobile */
     }
 
     .certs-grid {
