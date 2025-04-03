@@ -191,11 +191,11 @@ main {
 }
 
 .project-img:hover {
-    transform: scale(1.05); /* Scales up slightly on hover */
+    transform: scale(1.1); /* Scales up slightly on hover */
 }
 
 .cert-img {
-    width: 300px;
+    width: 250px;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
@@ -203,7 +203,7 @@ main {
 }
 
 .cert-img:hover {
-    transform: scale(1.05); /* Scales up slightly on hover */
+    transform: scale(1.1); /* Scales up slightly on hover */
 }
 
 .image-link {
