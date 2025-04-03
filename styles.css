@@ -169,7 +169,7 @@ main {
 
 .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for larger certs */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -187,11 +187,16 @@ main {
     height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.project-img:hover {
+    transform: scale(1.05); /* Scales up slightly on hover */
 }
 
 .cert-img {
-    width: 300px; /* Increased size */
-    height: auto; /* Maintains aspect ratio */
+    width: 300px;
+    height: auto;
     object-fit: contain;
     margin-bottom: 15px;
     transition: transform 0.3s ease; /* Smooth transition for hover */
@@ -199,6 +204,11 @@ main {
 
 .cert-img:hover {
     transform: scale(1.05); /* Scales up slightly on hover */
+}
+
+.image-link {
+    display: block; /* Ensures the link wraps the image properly */
+    text-decoration: none; /* Removes underline */
 }
 
 .project-item h3,
@@ -259,11 +269,11 @@ main {
     }
 
     .cert-img {
-        width: 200px; /* Smaller size for mobile */
+        width: 200px;
         height: auto;
     }
 
     .certs-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for mobile */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
