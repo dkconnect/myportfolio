@@ -1,4 +1,4 @@
-# My Portfolio
+# My Portfolio ✅
 
 Welcome to my personal portfolio website! This project showcases my skills, education, experience, projects, certifications, and leadership roles. Built with HTML and CSS, it’s a reflection of my journey in programming, finance, and design.
 
