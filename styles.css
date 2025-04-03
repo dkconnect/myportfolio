@@ -112,6 +112,12 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .item-logo {
@@ -148,6 +154,11 @@ main {
     height: 30px;
     margin-bottom: 8px;
     object-fit: contain;
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.skill-logo:hover {
+    transform: scale(1.2); /* Scales up skill icons on hover */
 }
 
 .skill-item p {
@@ -233,15 +244,15 @@ main {
 footer {
     padding: 20px 0;
     background: linear-gradient(135deg, #f7d9e6 0%, #e9d5f7 100%);
-    display: flex; /* Added for centering */
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .container {
-    display: flex; /* Added for centering */
-    justify-content: center; /* Reinforce horizontal centering */
-    align-items: center; /* Reinforce vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
