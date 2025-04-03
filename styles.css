@@ -202,19 +202,19 @@ main {
 }
 
 .project-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .cert-img {
-    width: 300px;
-    height: auto;
+    width: 250px;
+    height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
 
 .cert-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .image-link {
