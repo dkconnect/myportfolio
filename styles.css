@@ -160,10 +160,16 @@ main {
     /* No background color specified, so it inherits from the body */
 }
 
-.projects-grid,
-.certs-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for larger certs */
     gap: 20px;
     margin-top: 20px;
 }
@@ -176,12 +182,23 @@ main {
     text-align: center;
 }
 
-.project-img,
-.cert-img {
+.project-img {
     width: 250px;
     height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
+}
+
+.cert-img {
+    width: 300px; /* Increased size */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.cert-img:hover {
+    transform: scale(1.05); /* Scales up slightly on hover */
 }
 
 .project-item h3,
@@ -239,5 +256,14 @@ main {
 
     .item {
         margin-bottom: 15px;
+    }
+
+    .cert-img {
+        width: 200px; /* Smaller size for mobile */
+        height: auto;
+    }
+
+    .certs-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for mobile */
     }
 }
